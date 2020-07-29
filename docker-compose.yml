@@ -29,7 +29,6 @@ services:
       WORDPRESS_DEBUG: 1
     volumes:
       - ./public:/var/www/html
-    working_dir: /var/www/html/wp
 
   wordpress-cli:
     depends_on:
@@ -39,7 +38,6 @@ services:
     user: xfs
     volumes:
       - ./public:/var/www/html
-    working_dir: /var/www/html/wp
 
   mailhog:
     image: mailhog/mailhog
